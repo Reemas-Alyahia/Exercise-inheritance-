@@ -1,16 +1,18 @@
 public class Rectangle extends Shape{
     //s width (double) and length (double).
-    private double width;  private double length;
+    private double width=1.0;  private double length1.0;
 
     Rectangle(){
 
     }
     Rectangle(double width,double length){
-        this.width=1.0;
-        this.length=1.0;
+        this.width=width;
+        this.length=length;
     }
     Rectangle(String color,boolean filled,double width,double length) {
         super(color,filled);
+        this.width=width;
+        this.length=length;
     }
 
     public Rectangle(double side) {this.width=side;
